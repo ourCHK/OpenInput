@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chk.myapplication">
+    package="com.chk.openinput">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@drawable/input_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <receiver android:name=".OpenInput">
+        <receiver android:name="com.chk.openinput.OpenInput">
             <intent-filter>
                 <action android:name="com.chk.OpenInput.ClickOpenInput" />
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -20,7 +20,7 @@
                 android:resource="@xml/open_input_info" />
         </receiver>
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.chk.openinput.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

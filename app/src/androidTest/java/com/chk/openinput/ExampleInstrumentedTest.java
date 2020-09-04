@@ -1,4 +1,4 @@
-package com.chk.myapplication;
+package com.chk.openinput;
 
 import android.content.Context;
 
